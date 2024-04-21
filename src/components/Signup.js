@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./Signup.css"
-import { logo } from '../media/media'
+import { logo1 } from '../media/media'
 import axios from "axios"
 import {Link, useNavigate} from "react-router-dom";
 const Signup = () => {
@@ -52,7 +52,7 @@ const Signup = () => {
     <div>
         <div className="container">
     <div className="left">
-      <img src={logo} alt="SignupImage" />
+      <img src={logo1} alt="SignupImage" />
     </div>
     <div className="right">
     <h2>Create Account</h2>
