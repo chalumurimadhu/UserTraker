@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .left {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .left img {
+    width: 230px;
+    height: auto;
+  }
+  
+  .right {
+    padding: 20px;
+    width: 40%;
+    background-color: #45a049;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .btnContainer{
+    display: flex;
+    flex-direction: row;
+  }
+  .right h2{
+    text-align: center;
+  }
+  .right .input1{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    outline: none;
+  }
+
+  .gender {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .gender label {
+    margin-right: 10px;
+  }
+  
+  .right .signupBtn {
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    width: 120px;
+  }
+  #btn1{
+    background-color: green;
+  }
+  #btn2{
+    background-color: crimson;
+  }
+  
+  .right button:hover {
+    background-color: #45a049;
+  }
+
+
+  .navbar{
+    background-color: blueviolet;
+  }
+  .navbar-brand, .btn-outline-success{
+    background-color: gray;
+    padding: 10px 16px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+   /* table */
+
+
+   .table{
+    padding: 30px;
+   }
+   #tableHeading{
+    background-color: blue;
+   }
+
+   .chartContainer{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+
+
+
+   /* Responsive ------------------------------------------------ */
+
+
+   @media only screen and (max-width: 1000px) {
+   
+    .container{
+      gap: 50px;
+    }
+    .left{
+      width: 40%;
+    }
+    .right{
+      width: 50%;
+    }
+    .right .input1{
+      width: 250px;
+     
+    }
+     .right .signupBtn {
+     padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      margin-left: 30px;
+      width: 100px;
+    }
+    
+  }
+
+
+  @media only screen and (max-width: 770px) {
+    
+    .container{
+      gap: 70px;
+    }
+    .left{
+      width: 35%;
+    }
+    .right{
+      width: 60%;
+    }
+    .right .input1{
+      width: 240px;
+     
+    }
+   
+  }
+
+  @media only screen and (max-width: 600px) {
+   
+    .container{
+      flex-direction: column;
+      margin-top: 30px;
+      
+    }
+  }
