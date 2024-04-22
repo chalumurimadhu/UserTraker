@@ -33,7 +33,7 @@ const Signup = () => {
     console.log(state);
     if(name && email && password){
       // axios.post("http://localhost:3000/user",state).then(
-      axios.post("http://localhost:8000/",state).then(
+      axios.post("https://user-traker.vercel.app/",state).then(
         (res) =>{
           console.log(res);
           navigate("/login")

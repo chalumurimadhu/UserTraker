@@ -15,7 +15,7 @@ const Login = () => {
   const { email, password } = state;
 
   useEffect(() => {
-    axios.get("http://localhost:8000/collections")
+    axios.get("https://user-traker.vercel.app/collections")
       .then((res) => {
         setList(res.data);
       })
@@ -48,7 +48,7 @@ const Login = () => {
         const updatedList = list.map(item => (item.email === updatedUser.email ? updatedUser : item));
         setList(updatedList);
 
-        axios.put(`http://localhost:8000/collections/${user._id}`, updatedUser)
+        axios.put(`https://user-traker.vercel.app/collections/${user._id}`, updatedUser)
           .then((res) => {
            
             console.log("Updated user", res.data)
