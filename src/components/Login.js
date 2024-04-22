@@ -34,8 +34,8 @@ const Login = () => {
     if (email === "admin@email.com" && password === "Admin@123") {
       navigate("/admin");
     } else {
-      if (list.length === 0) {
-        alert("User list is empty. Please try again later.");
+      if (!Array.isArray(list) || list.length === 0) {
+        alert("User list is empty or not initialized. Please try again later.");
         return;
       }
   
