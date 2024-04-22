@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended:true}))
 app.use(cors());
 
-mongoose.connect("mongodb://127.0.0.1:27017/project1")
+mongoose.connect("mongodb+srv://madhu:madhu@cluster0.xqrnrsm.mongodb.net/project1?retryWrites=true&w=majority&appName=Cluster0")
 
 app.get("/collections", (req, res) => {
     collection.find()
