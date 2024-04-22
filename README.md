@@ -1,3 +1,29 @@
+<h1>This is our SignUp Page</h1>
+
+<img width="959" alt="createpage" src="https://github.com/chalumurimadhu/UserTraker/assets/124064537/f482a5cc-de74-4d20-8e60-aec72e363379">
+<h1>This is our Login Page</h1>
+<img width="956" alt="loginpage" src="https://github.com/chalumurimadhu/UserTraker/assets/124064537/54c39cd1-bbce-4bf8-a413-959356519602">
+
+<h1>This is our Admin Page</h1>
+
+<img width="944" alt="admin1" src="https://github.com/chalumurimadhu/UserTraker/assets/124064537/70e99f69-d086-4338-9e36-ed25389e3073">
+
+
+<img width="944" alt="admin1" src="https://github.com/chalumurimadhu/UserTraker/assets/124064537/c6342d04-35c5-4fb3-b1eb-6947f1c7b81a">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
