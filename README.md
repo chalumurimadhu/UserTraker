@@ -7,7 +7,9 @@
 <h1>This is our Admin Page</h1>
 
 <img width="944" alt="admin1" src="https://github.com/chalumurimadhu/UserTraker/assets/124064537/70e99f69-d086-4338-9e36-ed25389e3073">
-![graph](https://github.com/chalumurimadhu/UserTraker/assets/124064537/6849f809-3257-4eee-9478-3670f4bfcd26)
+
+
+<img width="944" alt="admin1" src="https://github.com/chalumurimadhu/UserTraker/assets/124064537/c6342d04-35c5-4fb3-b1eb-6947f1c7b81a">
 
 
 
