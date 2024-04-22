@@ -28,81 +28,43 @@ const Login = () => {
     const { name, value } = e.target;
     setState({ ...state, [name]: value });
   }
+
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+   
     if (email === "admin@email.com" && password === "Admin@123") {
-      navigate("/admin");
+      navigate("/admin")
     } else {
-      if (!Array.isArray(list) || list.length === 0) {
-        alert("User list is empty or not initialized. Please try again later.");
-        return;
-      }
-  
       const user = list.find((user) => user.email === email && user.password === password);
-      console.log("user: ", user);
+      console.log("user: " , user)
       if (user) {
-        const updatedUser = {
-          ...user,
-          count: parseInt(user.count) + 1,
-          lastLogin: new Date().toLocaleString('default', { month: 'long' })
-        };
-        console.log(updatedUser);
-  
+        const updatedUser = { ...user,
+          count : parseInt(user.count) + 1, 
+          lastLogin : new Date().toLocaleString('default', { month: 'long' })
+        }
+        console.log(updatedUser)
+        
         // Update user in the list
         const updatedList = list.map(item => (item.email === updatedUser.email ? updatedUser : item));
         setList(updatedList);
-  
+
         axios.put(`https://user-traker.vercel.app/collections/${user._id}`, updatedUser)
           .then((res) => {
-            console.log("Updated user", res.data);
-            navigate("/profile");
+           
+            console.log("Updated user", res.data)
+      navigate("/profile")
+
+            
           })
+
           .catch((error) => {
             console.error("Error updating user data:", error);
           });
       } else {
-        alert("Please enter valid email or password");
+        alert("Please enter valid email or password")
       }
     }
   }
-  
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-   
-  //   if (email === "admin@email.com" && password === "Admin@123") {
-  //     navigate("/admin")
-  //   } else {
-  //     const user = list.find((user) => user.email === email && user.password === password);
-  //     console.log("user: " , user)
-  //     if (user) {
-  //       const updatedUser = { ...user,
-  //         count : parseInt(user.count) + 1, 
-  //         lastLogin : new Date().toLocaleString('default', { month: 'long' })
-  //       }
-  //       console.log(updatedUser)
-        
-  //       // Update user in the list
-  //       const updatedList = list.map(item => (item.email === updatedUser.email ? updatedUser : item));
-  //       setList(updatedList);
-
-  //       axios.put(`https://user-traker.vercel.app/collections/${user._id}`, updatedUser)
-  //         .then((res) => {
-           
-  //           console.log("Updated user", res.data)
-  //     navigate("/profile")
-
-            
-  //         })
-
-  //         .catch((error) => {
-  //           console.error("Error updating user data:", error);
-  //         });
-  //     } else {
-  //       alert("Please enter valid email or password")
-  //     }
-  //   }
-  // }
   
   return (
     <div>
